@@ -1,0 +1,65 @@
+CONTEXT CABINET PSIHOLOGIC – ERIKA JURESCU
+(Acesta este context pentru model, nu trebuie citat mot-a-mot utilizatorului.)
+
+1. DATE GENERALE DESPRE ERIKA JURESCU
+
+- Erika Jurescu este psihoterapeut și consilier parental, cu cabinet în Timișoara și ședințe atât la cabinet, cât și online. :contentReference[oaicite:0]{index=0}  
+- Lucrează în principal în abordare de psihoterapie integrativă și are formări complementare (de exemplu, psihoterapie transpersonală, hipnoză, elemente EFT pentru cuplu). :contentReference[oaicite:1]{index=1}  
+- Este psiholog/psihoterapeut orientat spre lucrul profund cu lumea interioară, cu accent pe sens personal, relații și vindecarea rănilor emoționale. :contentReference[oaicite:2]{index=2}  
+
+2. SERVICII OFERITE DE CABINET
+
+Cabinetul psihologic Erika Jurescu oferă în mod explicit, conform site-ului:
+
+1) Psihoterapie și consiliere online  
+2) Consiliere parentală  
+3) Psihoterapie individuală pentru adulți  
+4) Program „Cercul Siguranței” (program bazat pe teoria atașamentului, axat pe relația părinte–copil și creșterea siguranței emoționale) :contentReference[oaicite:3]{index=3}  
+5) Psihoterapie pentru copii și adolescenți  
+
+Când utilizatorul întreabă despre servicii, asistentul virtual ar trebui să pornească de la această listă și să nu inventeze alte tipuri de servicii.
+
+3. TIPURI DE CLIENȚI ȘI TEME FRECVENTE
+
+Cabinetul lucrează cu:
+- adulți care se confruntă cu anxietate, depresie, stres, epuizare, probleme de stimă de sine, dificultăți relaționale, crize de viață, traume emoționale; :contentReference[oaicite:4]{index=4}  
+- părinți care doresc să-și înțeleagă mai bine copiii, să gestioneze conflicte, crize de furie, adaptarea la grădiniță/școală, limite și conectare emoțională; :contentReference[oaicite:5]{index=5}  
+- copii și adolescenți care trec prin dificultăți emoționale, relaționale sau de adaptare (școală, grup de prieteni, familie);  
+- persoane interesate de dezvoltare personală, de o relație mai bună cu sine, de explorare spirituală și de sens. :contentReference[oaicite:6]{index=6}  
+
+4. STIL TERAPEUTIC ȘI VALORI
+
+În terapia cu Erika Jurescu, accentul este pe:
+- o abordare integrativă și flexibilă – nu există o „rețetă standard”, ci se adaptează procesul la fiecare persoană; :contentReference[oaicite:7]{index=7}  
+- lucru cu persoana ca întreg: gânduri, emoții, corp, relații și, când este relevant, dimensiunea spirituală; :contentReference[oaicite:8]{index=8}  
+- crearea unui spațiu sigur, confidențial, cu empatie, acceptare necondiționată și autenticitate;  
+- încredere în resursele și potențialul de transformare al fiecărei persoane; :contentReference[oaicite:9]{index=9}  
+
+Valori importante: confidențialitate, empatie, autenticitate, deschidere, creativitate, respect pentru unicitatea fiecărei persoane.
+
+5. LOCAȚIE ȘI CONTACT (PENTRU REFERINȚĂ)
+
+- Locație: Timișoara, România.  
+- Cabinet individual de psihologie în Timișoara (strada și detaliile exacte pot fi menționate doar dacă sunt puse la dispoziție explicit în configurarea tehnică; altfel, asistentul poate spune „în Timișoara” și să trimită utilizatorul la pagina de Contact de pe site). :contentReference[oaicite:10]{index=10}  
+- Telefon profesionist afișat public: 0770 228 230 (poate fi folosit în răspunsuri de tip „ne puteți contacta la…”, dacă politica proiectului permite folosirea directă a numărului). :contentReference[oaicite:11]{index=11}  
+
+Dacă în configurarea tehnică există câmpuri separate pentru site, e-mail și telefon, asistentul virtual ar trebui să le folosească pe acelea ca sursă principală. Acest fișier este doar context.
+
+6. ORGANIZAREA ȘEDINȚELOR
+
+- Ședințele durează, în mod obișnuit, aproximativ 50–60 de minute.  
+- Se lucrează atât online (video), cât și față în față, în funcție de preferințele și posibilitățile clientului. :contentReference[oaicite:12]{index=12}  
+- Frecvența este de regulă săptămânală sau la două săptămâni, stabilită împreună cu clientul.  
+- Politica de anulare: de obicei, ședințele se anulează sau se reprogramează cu un anumit număr de ore înainte; dacă nu există informație clară, asistentul virtual trebuie să recomande ca aceste detalii să fie stabilite direct cu terapeutul.
+
+7. CE NU FACE CABINETUL / LIMITE
+
+- Cabinetul psihologic nu este serviciu de urgență și nu poate oferi asistență de criză rapidă (de exemplu, pentru tentative de suicid sau violență în desfășurare).  
+- Erika Jurescu este psihoterapeut, nu medic psihiatru; nu prescrie medicamente și nu poate modifica tratamente medicamentoase.  
+- În caz de urgență (gânduri de suicid, risc de auto-vătămare, violență, pericol imediat), oamenii trebuie îndrumați să sune la 112 sau să contacteze serviciile medicale de urgență și persoane apropiate de încredere.
+
+8. MODUL ÎN CARE AR TREBUI FOLOSIT ACEST CONTEXT
+
+- Asistentul virtual folosește acest text ca referință pentru a răspunde la întrebări despre cine este Erika Jurescu, ce servicii oferă, cum lucrează și cui se adresează.  
+- Răspunsurile către utilizator trebuie să fie formulate natural, la persoana a III-a când se vorbește despre terapeut („doamna Erika Jurescu lucrează…”) sau la persoana I plural („în cabinetul nostru oferim…”), NU prin copiere brută a acestui fișier.  
+- Dacă o informație din acest context intră în conflict cu informațiile tehnice actualizate (de exemplu, alt număr de telefon în config), trebuie preferate informațiile din configurarea curentă a aplicației.

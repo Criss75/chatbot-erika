@@ -1,0 +1,10 @@
+{
+  "id": "example-client",
+  "name": "Example Pet Shop",
+  "brandColor": "#FF8800",
+  "defaultLanguage": "ro",
+  "description": "Un pet shop online care vinde hrană și accesorii pentru animale.",
+  "toneOfVoice": "prietenoasă, clară, utilă",
+  "openingMessage": "Bună! 👋 Sunt asistentul virtual al pet shop-ului nostru. Cu ce te pot ajuta?",
+  "allowedTopics": ["produse", "program", "livrare", "politica de retur"]
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chatbot Agency – Dashboard</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: #f3f4f6;
+        margin: 0;
+        padding: 24px;
+      }
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+
+      .subtitle {
+        margin-bottom: 24px;
+        color: #555;
+      }
+
+      .clients-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+      }
+
+      .client-card {
+        background: white;
+        border-radius: 16px;
+        padding: 16px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .client-name {
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .client-desc {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .client-meta {
+        font-size: 12px;
+        color: #777;
+      }
+
+      .actions {
+        margin-top: 12px;
+        display: flex;
+        gap: 8px;
+      }
+
+      .btn {
+        border-radius: 999px;
+        border: none;
+        padding: 8px 14px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .btn-primary {
+        background: #ff8800;
+        color: white;
+        font-weight: 600;
+      }
+
+      .btn-secondary {
+        background: #eee;
+      }
+
+      .error {
+        color: #b00020;
+        margin-top: 12px;
+      }
+
+      .empty {
+        margin-top: 16px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chatbot Agency – Dashboard</h1>
+    <div class="subtitle">
+      Vezi toți clienții și deschide rapid interfața de chat pentru fiecare.
+    </div>
+
+    <div id="error" class="error" style="display: none"></div>
+    <div id="clients" class="clients-grid"></div>
+    <div id="empty" class="empty" style="display: none">
+      Nu există încă niciun client. Adaugă un folder nou în <code>clients/</code>
+      cu un <code>config.json</code>.
+    </div>
+
+    <script>
+      const clientsEl = document.getElementById("clients");
+      const errorEl = document.getElementById("error");
+      const emptyEl = document.getElementById("empty");
+
+      function showError(msg) {
+        errorEl.textContent = msg;
+        errorEl.style.display = "block";
+      }
+
+      function renderClients(clients) {
+        if (!clients.length) {
+          emptyEl.style.display = "block";
+          return;
+        }
+
+        clients.forEach((c) => {
+          const card = document.createElement("div");
+          card.className = "client-card";
+
+          const name = document.createElement("div");
+          name.className = "client-name";
+          name.textContent = c.name;
+
+          if (c.brandColor) {
+            name.style.borderLeft = "6px solid " + c.brandColor;
+            name.style.paddingLeft = "8px";
+          }
+
+          const desc = document.createElement("div");
+          desc.className = "client-desc";
+          desc.textContent =
+            c.description ||
+            "Fără descriere. Poți adăuga una în clients/" +
+              c.id +
+              "/config.json";
+
+          const meta = document.createElement("div");
+          meta.className = "client-meta";
+          meta.textContent =
+            "ID: " +
+            c.id +
+            (c.defaultLanguage ? " • Limba: " + c.defaultLanguage : "");
+
+          const actions = document.createElement("div");
+          actions.className = "actions";
+
+          const chatBtn = document.createElement("button");
+          chatBtn.className = "btn btn-primary";
+          chatBtn.textContent = "Deschide chat";
+          chatBtn.onclick = () => {
+            window.open("/chat.html?clientId=" + encodeURIComponent(c.id));
+          };
+
+          actions.appendChild(chatBtn);
+
+          card.appendChild(name);
+          card.appendChild(desc);
+          card.appendChild(meta);
+          card.appendChild(actions);
+
+          clientsEl.appendChild(card);
+        });
+      }
+
+      async function loadClients() {
+        try {
+          const res = await fetch("/api/clients");
+          if (!res.ok) {
+            showError("Nu pot încărca lista de clienți.");
+            return;
+          }
+          const data = await res.json();
+          renderClients(data);
+        } catch (e) {
+          console.error(e);
+          showError("Eroare de rețea la încărcarea clienților.");
+        }
+      }
+
+      loadClients();
+    </script>
+  </body>
+</html>

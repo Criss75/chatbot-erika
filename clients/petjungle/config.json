@@ -1,0 +1,15 @@
+{
+  "id": "petjungle",
+  "name": "Pet Jungle",
+  "brandColor": "#009688",
+  "defaultLanguage": "ro",
+  "description": "Magazin online de hrană și accesorii pentru animale, cu focus pe câini și pisici.",
+  "toneOfVoice": "prietenoasă, jucăușă, dar profesionistă",
+  "openingMessage": "Bună! 🐾 Sunt asistentul Pet Jungle. Cu ce te pot ajuta azi?",
+  "allowedTopics": ["produse", "comenzi", "livrare", "retur", "program magazin"],
+  "faqButtons": [
+    "Ce tipuri de hrană recomandați pentru câini?",
+    "Care sunt costurile și timpul de livrare?",
+    "Cum pot schimba sau returna o comandă?"
+  ]
+}
