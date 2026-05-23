@@ -4,12 +4,21 @@ import fs from "fs";
 export type ClientConfig = {
   id: string;
   name: string;
-  brandColor?: string;
+  brandColor?: string; // rămâne pentru compatibilitate
   defaultLanguage?: string;
   description?: string;
   toneOfVoice?: string;
   openingMessage?: string;
   allowedTopics?: string[];
+
+  // 👇 nou: set de culori de brand
+  brandColors?: {
+    primary?: string;          // header, buton trimite
+    secondary?: string;        // bubble user
+    assistantBubble?: string;  // bubble asistent
+    background?: string;       // fundal pagină
+    surface?: string;          // card/chat container
+  };
 };
 
 export type ClientSummary = {

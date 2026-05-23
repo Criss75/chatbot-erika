@@ -1,0 +1,26 @@
+{
+  "id": "bistro-luna",
+  "name": "Bistro Luna",
+  "brandColor": "#8B5CF6",
+  "brandColors": {
+    "primary": "#8B5CF6",
+    "secondary": "#F97316",
+    "assistantBubble": "#E5E7EB",
+    "background": "#F5F3FF",
+    "surface": "#FFFFFF"
+  },
+  "defaultLanguage": "ro",
+  "description": "Bistro modern în centrul orașului, cu meniu de sezon și atmosferă relaxată.",
+  "toneOfVoice": "prietenoasă, caldă, relaxată",
+  "openingMessage": "Bună! 👋 Sunt asistentul virtual Bistro Luna. Vă pot ajuta cu informații despre meniu, rezervări și program. Cu ce vă pot fi de folos?",
+  "allowedTopics": [
+    "meniul zilei",
+    "meniul a la carte",
+    "program bistro",
+    "rezervări",
+    "evenimente private",
+    "opțiuni vegetariene și vegane",
+    "livrare și take-away",
+    "adresa și parcare"
+  ]
+}

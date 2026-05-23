@@ -1,269 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
-    <title>Chat client</title>
-    <style>
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          sans-serif;
-        background: #f5f5f5;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      .chat-container {
-        background: white;
-        width: 100%;
-        max-width: 480px;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-      }
-
-      .chat-header {
-        padding: 12px 16px;
-        background: #ff8800;
-        color: white;
-        font-weight: 600;
-      }
-
-      .messages {
-        flex: 1;
-        padding: 12px;
-        overflow-y: auto;
-        font-size: 14px;
-      }
-
-      .message {
-        margin-bottom: 8px;
-        max-width: 80%;
-        padding: 8px 10px;
-        border-radius: 12px;
-        line-height: 1.3;
-        white-space: pre-wrap;
-      }
-
-      .message.user {
-        margin-left: auto;
-        background: #0078d4;
-        color: white;
-        border-bottom-right-radius: 2px;
-      }
-
-      .message.bot {
-        margin-right: auto;
-        background: #f0f0f0;
-        border-bottom-left-radius: 2px;
-      }
-
-      .chat-input {
-        display: flex;
-        padding: 8px;
-        border-top: 1px solid #ddd;
-        gap: 8px;
-      }
-
-      .chat-input input {
-        flex: 1;
-        padding: 8px 10px;
-        border-radius: 999px;
-        border: 1px solid #ccc;
-        font-size: 14px;
-      }
-
-      .chat-input button {
-        padding: 8px 14px;
-        border-radius: 999px;
-        border: none;
-        background: #ff8800;
-        color: white;
-        font-weight: 600;
-        cursor: pointer;
-      }
-
-      .chat-input button:disabled {
-        opacity: 0.6;
-        cursor: default;
-      }
-
-      .error {
-        padding: 12px;
-        color: #b00020;
-        font-size: 14px;
-        text-align: center;
-      }
-
-      /* FAQ buttons */
-
-      .faq-buttons {
-        padding: 0 12px 8px 12px;
-      }
-
-      .faq-button {
-        display: inline-block;
-        margin: 4px 4px 0 0;
-        padding: 6px 10px;
-        font-size: 12px;
-        border-radius: 999px;
-        border: 1px solid #ddd;
-        background: #f7f7f7;
-        cursor: pointer;
-      }
-
-      .faq-button:hover {
-        background: #eee;
-      }
-    </style>
+    <title>Chatbot Agency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="chat-container">
-      <div id="chat-header" class="chat-header">Chatbot client</div>
-      <div id="messages" class="messages"></div>
-
-      <!-- nou: container pentru FAQ buttons -->
-      <div id="faq-buttons" class="faq-buttons" style="display: none"></div>
-
-      <div id="error" class="error" style="display: none"></div>
-      <form id="chat-form" class="chat-input">
-        <input
-          id="message-input"
-          type="text"
-          placeholder="Scrie un mesaj..."
-          autocomplete="off"
-        />
-        <button type="submit">Trimite</button>
-      </form>
+    <div class="app-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
     </div>
 
-    <script>
-      const params = new URLSearchParams(window.location.search);
-      const CLIENT_ID = params.get("clientId");
+    <div class="chat-wrapper">
+      <div class="chat-container">
 
-      const headerEl = document.getElementById("chat-header");
-      const messagesEl = document.getElementById("messages");
-      const errorEl = document.getElementById("error");
-      const form = document.getElementById("chat-form");
-      const input = document.getElementById("message-input");
-      const button = form.querySelector("button");
-      const faqContainer = document.getElementById("faq-buttons");
+        <!-- HEADER -->
+        <header class="chat-header">
+          <div class="header-left">
+            <div class="avatar" id="client-avatar">
+              <svg id="avatar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="26" height="26" fill="none">
+                <rect x="12" y="20" width="40" height="30" rx="8" fill="white" fill-opacity="0.92"/>
+                <rect x="20" y="30" width="8" height="8" rx="2" fill="currentColor"/>
+                <rect x="36" y="30" width="8" height="8" rx="2" fill="currentColor"/>
+                <rect x="24" y="42" width="16" height="3" rx="1.5" fill="currentColor"/>
+                <rect x="28" y="10" width="8" height="10" rx="4" fill="white" fill-opacity="0.92"/>
+                <circle cx="32" cy="10" r="3" fill="white" fill-opacity="0.92"/>
+                <rect x="8" y="28" width="4" height="10" rx="2" fill="white" fill-opacity="0.7"/>
+                <rect x="52" y="28" width="4" height="10" rx="2" fill="white" fill-opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="header-info">
+              <h1 id="chat-title">Chatbot</h1>
+              <span class="status-dot-row">
+                <span class="status-dot"></span>
+                <span class="status-text">Online now &bull; 24/7 support</span>
+              </span>
+            </div>
+          </div>
+          <div class="header-right">
+            <select id="client-select"></select>
+          </div>
+        </header>
 
-      function showError(msg) {
-        errorEl.textContent = msg;
-        errorEl.style.display = "block";
-      }
+        <!-- CHAT WINDOW -->
+        <div id="chat-window" class="chat-window">
+          <div class="chat-date-divider"><span>Today</span></div>
+        </div>
 
-      function addMessage(text, type) {
-        const div = document.createElement("div");
-        div.className = "message " + type;
-        div.textContent = text;
-        messagesEl.appendChild(div);
-        messagesEl.scrollTop = messagesEl.scrollHeight;
-      }
+        <!-- INPUT -->
+        <div class="chat-input-area">
+          <form id="chat-form" class="chat-input-row">
+            <input
+              id="chat-input"
+              type="text"
+              placeholder="Write a message..."
+              autocomplete="off"
+            />
+            <button type="submit" id="send-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+          <p class="powered-by">Powered by <strong>Chatbot Agency</strong></p>
+        </div>
 
-      async function loadClient() {
-        if (!CLIENT_ID) {
-          showError(
-            "Lipsește parametru ?clientId= din URL. Exemplu: /chat.html?clientId=example-client"
-          );
-          form.style.display = "none";
-          return;
-        }
+      </div>
+    </div>
 
-        try {
-          const res = await fetch(`/api/clients/${CLIENT_ID}`);
-          if (!res.ok) {
-            showError(
-              "Nu am găsit clientul " +
-                CLIENT_ID +
-                ". Verifică numele sau config-ul."
-            );
-            form.style.display = "none";
-            return;
-          }
-
-          const config = await res.json();
-
-          headerEl.textContent = `${config.name} – Chatbot`;
-          if (config.brandColor) {
-            headerEl.style.backgroundColor = config.brandColor;
-          }
-
-          const opening =
-            config.openingMessage ||
-            "Bună! Sunt chatbot-ul nostru. Cu ce te pot ajuta?";
-          addMessage(opening, "bot");
-
-          // --- nou: FAQ buttons din config.faqButtons ---
-          if (Array.isArray(config.faqButtons) && config.faqButtons.length > 0) {
-            faqContainer.innerHTML = "";
-            config.faqButtons.forEach((text) => {
-              const btn = document.createElement("button");
-              btn.type = "button";
-              btn.className = "faq-button";
-              btn.textContent = text;
-              btn.onclick = () => {
-                sendMessage(text); // trimitem întrebarea ca mesaj al userului
-              };
-              faqContainer.appendChild(btn);
-            });
-            faqContainer.style.display = "block";
-          } else {
-            faqContainer.style.display = "none";
-          }
-        } catch (e) {
-          console.error(e);
-          showError("Eroare la încărcarea datelor clientului.");
-        }
-      }
-
-      async function sendMessage(message) {
-        addMessage(message, "user");
-        input.value = "";
-        input.focus();
-        button.disabled = true;
-
-        try {
-          const res = await fetch(`/api/chat/${CLIENT_ID}`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ message }),
-          });
-
-          if (!res.ok) {
-            const err = await res.json().catch(() => ({}));
-            addMessage(
-              "Eroare de la server: " +
-                (err.error || res.status + " " + res.statusText),
-              "bot"
-            );
-          } else {
-            const data = await res.json();
-            addMessage(data.reply, "bot");
-          }
-        } catch (e) {
-          addMessage("Eroare de rețea. Încearcă din nou.", "bot");
-        } finally {
-          button.disabled = false;
-        }
-      }
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const text = input.value.trim();
-        if (!text || !CLIENT_ID) return;
-        sendMessage(text);
-      });
-
-      loadClient();
-    </script>
+    <script src="chat.js"></script>
   </body>
 </html>

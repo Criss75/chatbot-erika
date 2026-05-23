@@ -1,0 +1,7 @@
+    <!-- Chat button: alb, robotel din imagine -->
+    <div id="chat-widget-button" onclick="toggleChat()">
+      <div class="chat-btn-icon">
+        <img src="/robot.png" style="width:24px;height:24px;border-radius:6px;object-fit:cover;display:block;" />
+      </div>
+      <span>Chat</span>
+    </div>

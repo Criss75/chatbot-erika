@@ -1,0 +1,27 @@
+{
+  "id": "urban-market",
+  "name": "Urban Market",
+  "brandColor": "#0EA5E9",
+  "brandColors": {
+    "primary": "#0EA5E9",       
+    "secondary": "#22C55E",      
+    "assistantBubble": "#E5E7EB",
+    "background": "#ECFEFF",
+    "surface": "#FFFFFF"
+  },
+  "defaultLanguage": "ro",
+  "description": "Magazin online cu produse pentru casă și lifestyle urban.",
+  "toneOfVoice": "clară, utilă, modernă",
+  "openingMessage": "Salut! 👋 Sunt asistentul virtual Urban Market. Te pot ajuta să găsești produse, să afli detalii despre comenzi, livrare și retur. Cu ce începem?",
+  "allowedTopics": [
+    "produse",
+    "categorii de produse",
+    "disponibilitate",
+    "comenzi",
+    "plată",
+    "livrare",
+    "retur",
+    "garanție",
+    "cont client"
+  ]
+}

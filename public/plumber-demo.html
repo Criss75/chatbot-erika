@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plumbing Pro USA | Fast, Reliable Plumbing Services</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f7f9fc; color: #1f2937; line-height: 1.5; }
+      a { text-decoration: none; color: inherit; }
+      .container { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+      .topbar { background: #0f172a; color: white; font-size: 14px; }
+      .topbar .container { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; gap: 16px; flex-wrap: wrap; }
+      .navbar { background: white; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 50; }
+      .navbar .container { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
+      .brand { font-size: 24px; font-weight: 800; color: #0f172a; }
+      .brand span { color: #dc2626; }
+      .nav-links { display: flex; gap: 20px; font-size: 15px; color: #374151; }
+      .hero { background: linear-gradient(rgba(15,23,42,0.72),rgba(15,23,42,0.72)), url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat; color: white; }
+      .hero .container { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 32px; align-items: center; min-height: 78vh; padding: 56px 0; }
+      .hero h1 { font-size: clamp(36px, 5vw, 64px); line-height: 1.05; margin: 0 0 16px; }
+      .hero p { font-size: 18px; max-width: 640px; margin: 0 0 24px; color: #e5e7eb; }
+      .hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+      .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 999px; font-weight: 700; font-size: 15px; border: none; cursor: pointer; }
+      .btn-primary { background: #dc2626; color: white; }
+      .btn-primary:hover { background: #b91c1c; }
+      .btn-secondary { background: white; color: #0f172a; }
+      .hero-card { background: rgba(255,255,255,0.95); color: #111827; border-radius: 24px; padding: 28px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); }
+      .hero-card h3 { margin-top: 0; font-size: 24px; }
+      .hero-card ul { padding-left: 18px; margin: 16px 0 0; }
+      .hero-card li { margin-bottom: 10px; }
+      .trust-bar { background: white; border-bottom: 1px solid #e5e7eb; }
+      .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 20px 0; text-align: center; }
+      .trust-item { background: #f8fafc; border-radius: 16px; padding: 18px; }
+      .trust-number { display: block; font-size: 28px; font-weight: 800; color: #dc2626; }
+      section { padding: 72px 0; }
+      .section-title { text-align: center; margin-bottom: 40px; }
+      .section-title h2 { font-size: 36px; margin: 0 0 12px; }
+      .section-title p { margin: 0 auto; max-width: 720px; color: #6b7280; }
+      .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      .card { background: white; border-radius: 20px; padding: 24px; box-shadow: 0 8px 30px rgba(15,23,42,0.08); }
+      .card h3 { margin-top: 0; margin-bottom: 10px; }
+      .card p { margin: 0; color: #6b7280; }
+      .why-us { background: #eef4ff; }
+      .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; align-items: center; }
+      .why-list { display: grid; gap: 16px; }
+      .why-item { background: white; border-radius: 18px; padding: 18px 20px; box-shadow: 0 6px 20px rgba(15,23,42,0.06); }
+      .why-item strong { display: block; margin-bottom: 6px; }
+      .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      .testimonial { background: white; border-radius: 20px; padding: 24px; box-shadow: 0 8px 30px rgba(15,23,42,0.08); }
+      .stars { color: #f59e0b; font-size: 18px; margin-bottom: 12px; }
+      .cta { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; text-align: center; }
+      .cta h2 { font-size: 38px; margin-top: 0; }
+      .cta p { max-width: 720px; margin: 0 auto 24px; color: #dbeafe; }
+      .footer { background: #0f172a; color: #cbd5e1; padding: 36px 0; }
+      .footer .container { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+
+      #chat-widget-button {
+        position: fixed; right: 22px; bottom: 10px; z-index: 9999;
+        background: #ffffff; color: #1e293b;
+        border-radius: 999px; padding: 10px 18px 10px 10px;
+        display: flex; align-items: center; gap: 10px; cursor: pointer;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.15), 0 2px 8px rgba(0,0,0,0.08);
+        font-weight: 700; font-size: 15px;
+        border: 1px solid #e2e8f0;
+        transition: box-shadow 0.2s, transform 0.15s;
+      }
+      #chat-widget-button:hover {
+        box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+        transform: translateY(-1px);
+      }
+
+      /* Robot icon — fara border, just imagine */
+      .chat-btn-icon {
+        width: 36px; height: 36px; border-radius: 10px;
+        overflow: hidden; flex-shrink: 0;
+        background: #f8fafc;
+        border: none;
+      }
+      .chat-btn-icon img {
+        width: 100%; height: 100%; object-fit: cover; display: block;
+      }
+
+      #chat-widget-iframe {
+        position: fixed; right: 22px; bottom: 72px;
+        width: 390px; height: calc(100vh - 90px); max-height: 700px;
+        border: none; border-radius: 18px;
+        box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+        display: none; z-index: 9999; overflow: hidden;
+      }
+
+      @media (max-width: 980px) {
+        .hero .container, .services-grid, .testimonial-grid, .why-grid, .trust-grid { grid-template-columns: 1fr; }
+        .nav-links { display: none; }
+        #chat-widget-iframe { right: 12px; left: 12px; bottom: 72px; width: auto; height: calc(100vh - 90px); max-height: none; }
+        #chat-widget-button { right: 12px; bottom: 10px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <div>24/7 Emergency Plumbing Service</div>
+        <div>Call now: (555) 210-4488</div>
+      </div>
+    </div>
+    <header class="navbar">
+      <div class="container">
+        <div class="brand">Plumbing<span>Pro</span> USA</div>
+        <nav class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <h1>Fast, Trusted Plumbing Help When You Need It Most</h1>
+          <p>From emergency pipe repairs to water heater installation, Plumbing Pro USA delivers licensed, reliable, and affordable plumbing services for homes and businesses across your area.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+            <a href="tel:5552104488" class="btn btn-secondary">Call Now</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Same-Day Plumbing Service</h3>
+          <p>Need help fast? Our technicians are ready for emergency visits and scheduled plumbing work.</p>
+          <ul>
+            <li>Emergency leak repair</li>
+            <li>Drain cleaning & clog removal</li>
+            <li>Water heater replacement</li>
+            <li>Bathroom & kitchen plumbing</li>
+            <li>Residential and commercial service</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="trust-bar">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-number">15+</span>Years Experience</div>
+        <div class="trust-item"><span class="trust-number">2,500+</span>Jobs Completed</div>
+        <div class="trust-item"><span class="trust-number">24/7</span>Emergency Support</div>
+        <div class="trust-item"><span class="trust-number">4.9★</span>Average Customer Rating</div>
+      </div>
+    </div>
+    <section id="services">
+      <div class="container">
+        <div class="section-title"><h2>Our Plumbing Services</h2><p>Professional plumbing solutions for urgent issues, routine maintenance, upgrades, and full installations.</p></div>
+        <div class="services-grid">
+          <div class="card"><h3>Emergency Plumbing</h3><p>Burst pipes, active leaks, overflowing toilets, and urgent plumbing issues handled quickly.</p></div>
+          <div class="card"><h3>Drain Cleaning</h3><p>Slow drains, stubborn clogs, and sewer backups resolved with modern tools.</p></div>
+          <div class="card"><h3>Water Heaters</h3><p>Repair, replacement, and installation of traditional and tankless water heaters.</p></div>
+          <div class="card"><h3>Leak Detection</h3><p>Hidden leaks identified fast to prevent water damage, mold, and rising utility bills.</p></div>
+          <div class="card"><h3>Fixture Installation</h3><p>Faucets, sinks, toilets, showers, garbage disposals, and kitchen plumbing installations.</p></div>
+          <div class="card"><h3>Commercial Plumbing</h3><p>Plumbing support for offices, shops, restaurants, and small business locations.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="why-us" class="why-us">
+      <div class="container">
+        <div class="section-title"><h2>Why Homeowners Choose Us</h2><p>Fast response times, transparent pricing, and reliable work that lasts.</p></div>
+        <div class="why-grid">
+          <div class="why-list">
+            <div class="why-item"><strong>Licensed & Insured Technicians</strong>Every job is handled by trained professionals who respect your home and your time.</div>
+            <div class="why-item"><strong>Upfront Pricing</strong>No hidden surprises. We explain the issue and your options before work begins.</div>
+            <div class="why-item"><strong>Fast Scheduling</strong>Same-day and emergency slots available in many service areas.</div>
+            <div class="why-item"><strong>Friendly Support</strong>Call us, book online, or use the chat to get quick answers.</div>
+          </div>
+          <div class="card">
+            <h3>Need Help Right Now?</h3>
+            <p>Use the chat button on this page to ask about services, pricing, service areas, or emergency plumbing issues.</p>
+            <p style="margin-top:12px;color:#374151">Visitors can ask:</p>
+            <ul>
+              <li>Do you offer emergency plumbing?</li>
+              <li>How much does drain cleaning cost?</li>
+              <li>Do you service my ZIP code?</li>
+              <li>Can I book a water heater inspection?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reviews">
+      <div class="container">
+        <div class="section-title"><h2>What Customers Say</h2><p>Trusted by homeowners and small businesses for fast and reliable plumbing support.</p></div>
+        <div class="testimonial-grid">
+          <div class="testimonial"><div class="stars">★★★★★</div><p>"They arrived the same afternoon, fixed the leak under our sink, and explained everything clearly."</p><strong>— Sarah M., Dallas, TX</strong></div>
+          <div class="testimonial"><div class="stars">★★★★★</div><p>"Professional, on time, and fair pricing. The whole process was smooth."</p><strong>— James R., Tampa, FL</strong></div>
+          <div class="testimonial"><div class="stars">★★★★★</div><p>"Excellent communication and fast emergency service. I'd recommend them to anyone."</p><strong>— Melissa T., Phoenix, AZ</strong></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="cta">
+      <div class="container">
+        <h2>Ready to Book a Plumbing Service?</h2>
+        <p>Call our team, request a quote, or use the live chat to get quick answers before scheduling.</p>
+        <div class="hero-buttons" style="justify-content:center">
+          <a href="tel:5552104488" class="btn btn-primary">Call (555) 210-4488</a>
+          <a href="mailto:hello@plumbingprousa-demo.com" class="btn btn-secondary">Email Us</a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div><strong>PlumbingPro USA</strong><br />Fast, licensed, and dependable plumbing service.</div>
+        <div>Service Hours: Mon–Sun, 24/7 Emergency<br />Email: hello@plumbingprousa-demo.com</div>
+      </div>
+    </footer>
+
+    <!-- Chat button: alb, robotel fara border -->
+    <div id="chat-widget-button" onclick="toggleChat()">
+      <div class="chat-btn-icon">
+        <img src="/robot.png" alt="chat" />
+      </div>
+      <span>Chat</span>
+    </div>
+
+    <iframe id="chat-widget-iframe"></iframe>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const clientId = params.get("clientId") || "plumbing-pro-usa";
+      const iframe = document.getElementById("chat-widget-iframe");
+      iframe.src = "/chat.html?clientId=" + encodeURIComponent(clientId);
+
+      function toggleChat() {
+        const isHidden = iframe.style.display === "none" || iframe.style.display === "";
+        iframe.style.display = isHidden ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>

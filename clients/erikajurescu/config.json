@@ -1,23 +1,31 @@
 {
   "id": "erikajurescu",
-  "name": "Cabinet psihologic Erika Jurescu",
-  "brandColor": "#6A86D9",
+  "name": "Erika Jurescu - Psihoterapie și Consiliere",
+  "brandColor": "#8B5CF6",
+  "brandColors": {
+    "primary": "#8B5CF6",
+    "secondary": "#6A86D9",
+    "assistantBubble": "#E5E7EB",
+    "background": "#F4F5FB",
+    "surface": "#FFFFFF"
+  },
   "defaultLanguage": "ro",
-  "description": "Un cabinet psihologic care oferă consiliere și psihoterapie pentru adulți și adolescenți, atât față în față, cât și online.",
-  "toneOfVoice": "calmă, empatică, profesionistă",
-  "openingMessage": "Bună! 👋 Sunt asistentul virtual al cabinetului psihologic Erika Jurescu. Vă pot oferi informații despre servicii, programări, tarife și modul în care decurg ședințele. Cu ce vă pot ajuta?",
+  "description": "Cabinet de psihoterapie și consiliere parentală. Spațiu sigur pentru înțelegere, echilibru și transformare. Psihoterapie pentru adulți, adolescenți și copii, precum și consiliere parentală și online.",
+  "toneOfVoice": "empatică, blândă, profesionistă, plină de înțelegere",
+  "openingMessage": "Bună! 👋 Sunt asistentul virtual al cabinetului Erika Jurescu. Îți pot ajuta cu informații despre serviciile de psihoterapie și consiliere parentală. Cu ce te pot ajuta?",
   "allowedTopics": [
-    "servicii psihologice",
-    "psihoterapie individuală",
-    "psihoterapie pentru adolescenți",
-    "consiliere de cuplu",
-    "programări",
-    "program cabinet",
-    "tarife",
-    "ședințe online",
-    "locație cabinet",
-    "confidențialitate",
-    "politica de anulare",
-    "informații generale despre psihoterapie"
+    "psihoterapie",
+    "consiliere parentală",
+    "educație parentală",
+    "terapie pentru copii",
+    "terapie pentru adolescenți",
+    "terapie pentru adulți",
+    "psihoterapie online",
+    "program și disponibilitate",
+    "locație și contact",
+    "tarife și modalități de lucru",
+    "abordarea terapeutică EVRIKA",
+    "articole și resurse",
+    "programări"
   ]
 }

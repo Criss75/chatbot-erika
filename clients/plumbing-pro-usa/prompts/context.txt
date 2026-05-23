@@ -1,18 +1,13 @@
 CONTEXT CABINET PSIHOLOGIC – ERIKA JURESCU
-(Context pentru model - ghid de referință pentru informații precise)
+(Acesta este context pentru model, nu trebuie citat mot-a-mot utilizatorului.)
 
-=== INFORMAȚII GENERALE ===
+1. DATE GENERALE DESPRE ERIKA JURESCU
 
-Nume complet: Jurescu Erika Anna Cabinet Individual de Psihologie
-Locație: Strada Ady Endre Nr. 11, Timișoara, România
-Telefon: 0770 228 230
-Email: contact@erikajurescu.ro
-Website: https://www.erikajurescu.ro/
-Social Media: Facebook, Instagram, LinkedIn, YouTube (@erikajurescu)
+- Erika Jurescu este psihoterapeut și consilier parental, cu cabinet în Timișoara și ședințe atât la cabinet, cât și online. :contentReference[oaicite:0]{index=0}  
+- Lucrează în principal în abordare de psihoterapie integrativă și are formări complementare (de exemplu, psihoterapie transpersonală, hipnoză, elemente EFT pentru cuplu). :contentReference[oaicite:1]{index=1}  
+- Este psiholog/psihoterapeut orientat spre lucrul profund cu lumea interioară, cu accent pe sens personal, relații și vindecarea rănilor emoționale. :contentReference[oaicite:2]{index=2}  
 
-Erika Jurescu este psihoterapeută și consilieră parentală care oferă servicii de psihoterapie integrativă cu focus pe transformarea personală și vindecarea rănilor emoționale. Lucrează cu adulți, adolescenți și copii, atât la cabinet cât și online.
-
-=== SERVICIILE OFERITE DE CABINET ===
+2. SERVICII OFERITE DE CABINET
 
 Cabinetul psihologic Erika Jurescu oferă în mod explicit, conform site-ului:
 
@@ -223,7 +218,6 @@ Dacă în configurarea tehnică există câmpuri separate pentru site, e-mail ș
 - Cabinetul psihologic nu este serviciu de urgență și nu poate oferi asistență de criză rapidă (de exemplu, pentru tentative de suicid sau violență în desfășurare).  
 - Erika Jurescu este psihoterapeut, nu medic psihiatru; nu prescrie medicamente și nu poate modifica tratamente medicamentoase.  
 - În caz de urgență (gânduri de suicid, risc de auto-vătămare, violență, pericol imediat), oamenii trebuie îndrumați să sune la 112 sau să contacteze serviciile medicale de urgență și persoane apropiate de încredere.
-- Nu se ocupa de: schizofrenie, dependenta de jocuri de noroc, dependenta de sex, dependenta de pornografie, disfunctii sexuale la barbati (disfunctie erectila, ejaculare precoce, ejaculare tardiva), tulburari de comportament alimentar 
 
 8. MODUL ÎN CARE AR TREBUI FOLOSIT ACEST CONTEXT
 
