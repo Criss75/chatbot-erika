@@ -31,9 +31,38 @@
   <script>
     const iframe = document.getElementById('chat-widget-iframe');
     const btn = document.getElementById('chat-widget-button');
+
+    // Send resize message to parent
+    function postHeight(h) {
+      try {
+        window.parent.postMessage({ type: 'widget-resize', height: h }, '*');
+      } catch (e) {
+        console.warn('postMessage failed', e);
+      }
+    }
+
+    // Set initial collapsed height (120px)
+    postHeight(120);
+
     btn.addEventListener('click', () => {
       const isHidden = iframe.style.display === 'none' || iframe.style.display === '';
-      iframe.style.display = isHidden ? 'block' : 'none';
+      if (isHidden) {
+        // open chat and request parent to expand iframe to viewport height
+        iframe.style.display = 'block';
+        // Send parent the desired height in pixels (use viewport height)
+        postHeight(window.innerHeight || Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+      } else {
+        // close chat and request parent to shrink iframe back to 120px
+        iframe.style.display = 'none';
+        postHeight(120);
+      }
+    });
+
+    // If the window is resized while open, notify parent with updated height
+    window.addEventListener('resize', () => {
+      if (iframe.style.display === 'block') {
+        postHeight(window.innerHeight || Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+      }
     });
   </script>
 </body>
