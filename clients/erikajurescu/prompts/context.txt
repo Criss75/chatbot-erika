@@ -1,232 +1,131 @@
-CONTEXT CABINET PSIHOLOGIC – ERIKA JURESCU
-(Context pentru model - ghid de referință pentru informații precise)
+CONTEXT – CABINET PSIHOLOGIC ERIKA JURESCU
+Fișier de referință pentru asistentul virtual. Nu se copiază mot-à-mot în răspunsuri.
 
-=== INFORMAȚII GENERALE ===
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. CINE ESTE ERIKA JURESCU
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Nume complet: Jurescu Erika Anna Cabinet Individual de Psihologie
-Locație: Strada Ady Endre Nr. 11, Timișoara, România
+Erika Jurescu este psihoterapeută și consilieră parentală cu cabinet în Timișoara, România.
+Lucrează cu adulți, adolescenți și copii, atât la cabinet cât și online (video, prin Zoom sau Skype).
+Oferă servicii în limba română și în limba maghiară.
+
+Abordarea este integrativă: adaptează procesul terapeutic la fiecare persoană în parte.
+Accentul este pe un spațiu sigur, confidențial, empatic, cu acceptare necondiționată și autenticitate.
+Nu există „rețetă standard"; se lucrează cu persoana ca întreg – gânduri, emoții, corp, relații și, când este relevant, dimensiunea spirituală.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. SERVICII OFERITE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A) PSIHOTERAPIE INDIVIDUALĂ ADULȚI
+   Utilă când cineva se confruntă cu:
+   – anxietate, neliniște, atacuri de panică
+   – depresie, tristețe, oboseală emoțională, lipsă de sens
+   – stres cronic, epuizare, burnout
+   – probleme de stimă de sine sau de imagine de sine
+   – dificultăți relaționale (cuplu, familie, colegi, tipare relationale repetitive)
+   – traume emoționale, doliu, pierderi importante
+   – crize de viață, schimbări majore, dezorientare
+   – gânduri repetitive, ruminații, senzația de a fi „pe pilot automat"
+   – întrebări despre sens, identitate, spiritualitate
+
+B) CONSILIERE PARENTALĂ
+   Sprijin pentru părinți în situații precum:
+   – depresie postnatală
+   – crize familiale (divorț, boală cronică, deces)
+   – îmbunătățirea relației părinte–copil
+   – anxietate de separare a copilului
+   – gestionarea tantrumurilor și emoțiilor intense
+   – limite, pedeapsă vs. consecință, autonomie
+   – rivalitate fraternă, comportamente agresive
+   – minciuna, rezistența la frustrare
+   – supraprotecție sau conflicte între părinți
+   – cunoașterea etapelor normale de dezvoltare
+
+C) PSIHOTERAPIE COPII
+   Se adresează copiilor care:
+   – au anxietate de separare, fobii, ticuri
+   – au comportamente agresive sau opoziționale
+   – au simptome fizice de origine psihică (dureri abdominale, enuresis etc.)
+   – au dificultăți de adaptare la grădiniță sau școală
+   – au trecut printr-o pierdere importantă (deces, divorț)
+   – au tulburări de somn sau de alimentație
+   – au stimă de sine scăzută
+
+D) PSIHOTERAPIE ADOLESCENȚI
+   Indicată când adolescentul:
+   – dorește să se cunoască mai bine, să-și definească identitatea
+   – are dificultăți de relaționare, conflicte în familie
+   – se confruntă cu depresie, anxietate, stimă de sine scăzută
+   – are comportament agresiv, evitant sau autodistructiv
+   – se confruntă cu eșec școlar, absenteism
+   – abuzează de substanțe (alcool, tutun, droguri)
+   – a suferit un abuz sau o pierdere semnificativă
+
+E) PROGRAM „CERCUL SIGURANȚEI" (Circle of Security)
+   Program de educație parentală, disponibil în format individual sau de grup.
+   Se adresează părinților care vor să înțeleagă mai bine nevoile emoționale ale copilului
+   și să construiască o relație de atașament sigură.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. FORMAT ȘEDINȚE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+– Online (video pe Zoom sau Skype) sau față în față la cabinetul din Timișoara
+– Durata: 50 de minute sau 75 de minute, în funcție de preferințele clientului
+– Frecvența: de regulă săptămânală sau la două săptămâni, stabilită împreună cu clientul
+– Detalii despre anulare/reprogramare: se stabilesc direct cu terapeuta
+
+Psihoterapia online necesită: conexiune stabilă la internet, dispozitiv cu cameră video, spațiu liniștit.
+Procesul terapeutic online este identic ca profunzime și eficiență cu cel față în față.
+ATENȚIE: terapia online nu este recomandată în cazuri cu idei suicidare sau simptome psihiatrice severe.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. TARIFE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Psihoterapie individuală adulți – 50 min: 230 RON
+Psihoterapie individuală adulți – 75 min: 330 RON
+Consiliere parentală – 50 min: 230 RON
+Consiliere parentală – 75 min: 330 RON
+Psihoterapie adolescenți – 50 min: 230 RON
+Psihoterapie copii – 50 min: 230 RON
+„Cercul Siguranței" individual – 50 min: 230 RON
+„Cercul Siguranței" individual – 75 min: 330 RON
+„Cercul Siguranței" în grup – 100 min / 8 întâlniri: 960 RON (în 2 rate) sau 800 RON (plată integrală)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. CONTACT ȘI LOCAȚIE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Adresă cabinet: Strada Ady Endre nr. 11, Timișoara
 Telefon: 0770 228 230
 Email: contact@erikajurescu.ro
-Website: https://www.erikajurescu.ro/
-Social Media: Facebook, Instagram, LinkedIn, YouTube (@erikajurescu)
+Site: www.erikajurescu.ro
+Social media: Facebook, Instagram, LinkedIn, YouTube (@erikajurescu)
 
-Erika Jurescu este psihoterapeută și consilieră parentală care oferă servicii de psihoterapie integrativă cu focus pe transformarea personală și vindecarea rănilor emoționale. Lucrează cu adulți, adolescenți și copii, atât la cabinet cât și online.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. CE NU ACOPERĂ CABINETUL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-=== SERVICIILE OFERITE DE CABINET ===
+Cabinetul NU lucrează cu:
+– schizofrenie și psihoze active
+– dependență de jocuri de noroc
+– dependență de sex sau pornografie
+– disfuncții sexuale masculine (disfuncție erectilă, ejaculare precoce/tardivă)
+– tulburări de comportament alimentar (anorexie, bulimie, mancat compulsive, dependenta de mancare, mancatul emotional etc.)
 
-Cabinetul psihologic Erika Jurescu oferă în mod explicit, conform site-ului:
+NU dai nici un sfat, ii indrumi spre un alt specialist, folosesti exact termenul de specialist, fara alte explicatii, nu lungesti discutia, cat mai scurt
+Erika Jurescu este psihoterapeut, NU medic psihiatru.
+Nu prescrie și nu modifică tratamente medicamentoase – acestea sunt de competența medicului psihiatru sau a medicului de familie. 
 
-1) Psihoterapie și consiliere online  
-Trăim într-o lume în care internetul a devenit ceva natural și accesibil în aproape toate domeniile vieții. Practic, prin depășirea granițelor fizice, ne putem conecta indiferent de distanța dintre noi sau de locul în care ne aflăm. În acest context, ajutorul psihologic online a devenit acum o soluție larg răspândită și eficientă, oferită de profesioniștii care lucrează în acest domeniu.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+7. URGENȚE PSIHIATRICE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Psihoterapia și consilierea online reprezintă o soluție modernă, convenabilă și discretă pentru acele persoane care datorită situației în care se află, a stilului de viață, a naturii muncii lor sau a locului în care trăiesc, nu se pot întâlni personal cu un psihoterapeut sau nu o pot face cu regularitatea necesară pentru munca terapeutică.
+Cabinetul NU este serviciu de urgență.
+În caz de gânduri de suicid, auto-vătămare, violență sau pericol imediat:
+→ 112 (urgențe)
+→ serviciu medical de urgență psihiatrie
+→ persoana de încredere cea mai apropiată
 
-Avantajele psihoterapiei și consilierii online:
-
-este disponibilă din confortul propriei case
-este discretă
-nu necesită deplasări, nu este nevoie să folosiți mijloace de transport sau să căutați locuri de parcare
-economisiți din timpul dumneavoastră, care este atât de prețios în zilele noastre
-oferă o adaptare mai flexibilă a programărilor pentru ședințele terapeutice
-Cui îi este recomandată psihoterapia sau consilierea online
-
-persoanelor care trăiesc în locuri în care sunt dificil de găsit profesioniștii potriviți.
-compatriților noștri care locuiesc în străinătate și care doresc să își împărtășească problemele și dificultățile în limba lor maternă. Comunicarea în propria lor limbă îi poate ajuta să se simtă mai bine înțeleși și să se creeze mai ușor conexiunea și relația terapeutică.
-persoanelor al căror program de lucru nu permite întâlnirile față în față (mult timp petrecut la serviciu, program fluctuant, călătorii frecvente în interes de serviciu)
-părinților care își cresc copiii mici și nu își permit să plece de acasă pentru câteva ore. Multe proaspete mămici găsesc varianta consilierii parentale și psihoterapiei online ca fiind de un real ajutor.
-persoanelor care în urma unor probleme medicale temporare sau definitive, nu au posibilitatea să se deplaseze la cabinet.
-celor care doresc să lucreze și rezonează cu un terapeut care nu se află în localitatea lor de reședință.
-persoanelor care pur și simplu doresc să economisească timpul de deplasare la cabinetul psihologic.
-Cum se desfășoară psihoterapia și consilierea online
-
-Întâlnirea de psihoterapie sau consiliere online va avea loc video, pe Zoom sau pe Skype. Veti avea nevoie de:
-
-o conexiune stabilă la internet
-un dispozitiv potrivit pentru conexiune video (laptop, telefon mobil etc.)
-un spațiu liniștit în care să vă asigurați ca nu veți fi deranjat în timpul alocat sesiunii de terapie
-În ceea ce privește procesul terapeutic, conținutul și caracteristicile ședinței de terapie, nu există deosebiri între psihoterapia online și cea față în față la cabinet. Nici durata și nici profunzimea procesului terapeutic nu diferă de cea a terapiei în direct. Profesionistul folosește aceleași abilități și cunoștințe, astfel încât munca terapeutică online nu este cu nimic mai „ușoară” sau mai “slabă” decât întâlnirile în cabinet.
-
-Totodată, este important de menționat că psihoterapia online nu se aplică tuturor situațiilor problematice. Ea nu este recomandată pentru acele persoane care se confruntă cu idei suicidare sau cu simptome psihiatrice severe, a căror stare necesită supraveghere medicală atentă și în care prezența fizică este vitală.
-2) Consiliere parentală 
-Faptul de a deveni părinți constituie în mod clar una dintre cele mai mari transformări din viața noastră de adult. Misiunea de părinte poate fi percepută ca o experiență plină de satisfacții și bucurii dar totodată și ca o “meserie” uneori dificilă, ce implică multă responsabilitate.
-
-Se pare că în lumea parentajului nu există răspunsuri standard sau “rețete” pentru a face lucrurile corect, nu există un șablon despre cum ar trebui făcute lucrurile pentru a fi un părinte suficient de bun. Prin urmare, este firesc ca din când în când să deveniți nesigur și chiar să vă blocați în rezolvarea problemelor, în ciuda tuturor intențiilor bune pe care le aveți.  În plus, cu nenumăratele cărți de parentaj disponibile (fiecare pretinzând că a găsit singura modalitate perfectă de a vă crește copilul), este ușor să va simțiți copleșit și confuz în rolul de părinte. În astfel de cazuri, cunoștințele unui specialist pot fi liniștitoare, vă pot oferi indicii și vă pot ajuta să vă găsiți direcția și soluțiile potrivite, pentru a vă asigura mai bine bunăstarea și armonia familială.
-
-Consilierea părinților este un serviciu care își propune să vă ofere cunoștințe, îndrumare, instrumente și sprijin emoțional, toate fără judecată sau părtinire. În consiliere, obiectivul principal este ca părintele să își recâștige încrederea în sine și un sentiment de competență, să fie capabil să gestioneze mai bine situațiile și experiențele pe care le aduce cu sine rolul parental.
-
-Puteți apela la consiliere parentală pentru situații precum:
-
-Depresia postnatală
-Crize familiale: divorț, boli cronice, deces în familie
-Îmbunătățirea relației părinte – copil, ameliorarea stărilor conflictuale în familie
-Anxietatea de separare (dificultatea copilului de a se desprinde de părinți la începerea grădiniței și în alte situații)
-Supraprotecția părintelui în relația cu copilul său
-Conflictele între părinți
-Gestionarea tantrumului la copii și a emoțiilor intense
-Dezvoltarea autonomiei copilului
-Rivalitatea fraternă
-Limitele impuse copiilor, diferențierea între limită și pedeapsă
-Comportamente agresive ale copiilor
-Creșterea rezistenței a frustrare
-Minciuna la copii și adolescenți
-Dezvoltarea abilităților sociale și emoționale ale copiilor și adolescenților
-Cunoașterea etapelor de dezvoltare normale ale copiilor și adolescenților
-Comportamente îngrijorătoare ale copilului sau adolescentului 
-3) Psihoterapie individuală pentru adulți 
-Poate că simți că te-ai pierdut pe tine...într-o relație, într-un rol, într-un ritm care nu îți mai aparține. Că duci prea multe pe umeri, că gândurile nu se mai opresc, că nimic nu te mai bucură. Poate te străduiești să rămâi puternic(ă) în fața celorlalți, dar în tine e tot mai mult haos, vinovăție, confuzie sau durere nerostită.
-
-Poate te întrebi cine mai ești, ce vrei sau încotro să o iei. Poate simți că nu mai ești tu sau că ești pe pilot automat, deși aparent „funcționezi”. Ai tot încercat să te descurci singur(ă), să ții totul sub control, dar ceva în tine îți spune că nu mai poți continua astfel.
-
-Uneori, primul pas nu e să găsești imediat soluții. Ci doar un spațiu în care să fii cu adevărat primit(ă) și ascultat(ă). Un spațiu care să-ți ofere răgazul să te oprești, să respiri și să simți că nu mai ești singur(ă) cu tot ce porți în tine.
-
-Din acel loc, poate începe un proces de psihoterapie - o cale de reîntoarcere spre tine.
-
-Ce este psihoterapia individuală
-Este un proces personal de explorare profundă, în care ești însoțit(ă) de un specialist,  nu pentru a fi „reparat(ă)”, ci pentru a-ți aduce întrebările, emoțiile și părțile din tine care au nevoie de atenție. Este o formă de îngrijire interioară. O călătorie spre mai multă claritate, sens și autenticitate.
-
-Lucrăm împreună, în ritmul tău, într-un spațiu sigur, confidențial și empatic, pentru a înțelege ce se întâmplă cu tine, ce doare, ce s-a rupt și cum poți merge mai prezent(ă) mai departe.
-
-Pentru unii oameni, acest proces devine și un spațiu pentru întrebări profunde despre sensul vieții, moarte, spiritualitate sau reconectarea cu ceva mai mare decât sinele. Dacă simți că vrei să aduci aceste teme în proces, le vom onora împreună.
-
-Când poate fi utilă psihoterapia
-Psihoterapia individuală poate fi de folos dacă te regăsești într-una sau mai multe dintre următoarele stări sau situații:
-
-Trăiești stări de anxietate, neliniște sau teamă persistentă
-Ai atacuri de panică care îți afectează viața
-Te confrunți cu depresie, tristețe, oboseală emoțională sau lipsa de sens
-Ai trecut prin traume, abuzuri, neglijare sau accidente
-Suferi în urma unui doliu, divorț sau pierderi importante
-Întâmpini dificultăți în relații: cu partenerul, părinții, copilul sau colegii
-Te confrunți cu crize de identitate, blocaje sau te simți „rătăcit(ă)”
-Cauți dezvoltare personală autentică, nu rețete superficiale
-Simți o chemare spre explorare spirituală
-Sau pur și simplu simți că nu îți mai este bine, dar nu știi exact de ce.
-Oricare ar fi locul în care te afli acum, ești binevenit(ă) aici.
-
-Cum lucrăm împreună
-Formatul ședințelor:
-Durata: 50-60 de minute
-
-Frecvența: de obicei săptămânală, dar procesul poate fi adaptat împreună, în funcție de nevoile și resursele tale.
-
-Locație:
-la cabinetul din Timișoara
-sau online, prin videoconferință (Zoom), din confortul spațiului tău - oriunde te-ai afla.
- 
-
-Beneficiile psihoterapiei
-Psihoterapia nu aduce schimbări peste noapte. Dar, cu răbdare și implicare, poate deveni un spațiu de transformare profundă. Iată câteva lucruri care se pot schimba, în timp, în acest proces:
-
-Înveți să recunoști și să gestionezi anxietatea, atacurile de panică sau gândurile care te copleșesc
-Reușești să navighezi momentele de epuizare emoțională în care simți că nu mai poți
-Înțelegi de ce te simți vinovat(ă) când spui „nu” și cum să-ți susții limitele, fără teamă
-Începi să ieși din tipare relaționale dureroase și să te regăsești pe tine
-Reduci perfecționismul care te ține într-o stare de presiune constantă
-Nu te mai simți atât de singur(ă) cu tot ce trăiești, chiar dacă în exterior pari „puternic(ă)”
-Îți clarifici cine ești, ce vrei și ce nu mai vrei - în relații, în carieră, în viața personală
-Începi să-ți pui ordine în gânduri și emoții
-Nu te mai lași definit(ă) de trecut - de traumă, rușine sau eșec - și înveți să creezi ceva nou, în prezent
-Îți regăsești dorința de a trăi cu sens
-Îți porți povestea cu mai multă blândețe, compasiune și înțelegere față de tine.
-Psihoterapia nu te schimbă în altcineva. Ci te ajută să- revii la tine.
-
-Despre mine
-Sunt Erika Jurescu, psihoterapeut acreditat în psihoterapie integrativă.
-
-Lucrez cu oameni care sunt în căutarea unui sens, a unei transformări autentice și durabile. Oameni care sunt deschiși la introspecție, la lucrul cu sine și care sunt dispuși să se implice cu adevărat în acest proces. Fie că e vorba de relații dificile, pierderi, crize de sens sau răni din trecut care încă dor, eu sunt aici să te însoțesc în procesul tău cu grijă și respect. Abordarea mea este empatică, onestă și orientată spre schimbări profunde, nu doar de suprafață.
-
-Pentru că fiecare om e diferit și felul în care lucrăm împreună este unic. Nu ofer rețete rapide și nici nu urmez un șablon fix. Ofer spațiu, prezență și însoțire atentă, într-un proces personalizat și viu, cu respect pentru ritmul tău interior. 
-4) Program „Cercul Siguranței” (program bazat pe teoria atașamentului, axat pe relația părinte–copil și creșterea siguranței emoționale) :contentReference[oaicite:3]{index=3}  
-
-5) Psihoterapie pentru copii și adolescenți  
-Pe parcursul dezvoltării și maturizării lor, copiii și adolescenții trec în mod firesc prin momente și etape mai dificile. În procesul lor de creștere, ei au nevoie să se adapteze la situații noi, la schimbări, cerințe și așteptări diverse din mediul familial, școlar, al prietenilor și de cele mai multe ori reușesc să facă față cu bine.
-
-Uneori însă, ei se simt depășiți de astfel de situații și acest lucru este exprimat prin comportamente și reacții neadecvate, blocaje emoționale, relații conflictuale cu cei din jur, dificultăți școlare, somatizări etc. În asemenea perioade, părinții pot resimți că se află în impas, că eforturile și demersurile lor nu dau rezultatele așteptate sau nu sunt suficiente și atunci pot solicita sprijinul unui psihoterapeut. În terapie se urmărește dezvoltarea armonioasă a personalității copilului, o schimbare calitativă în relația copil-părinte, descoperirea resurselor relației lor și sporirea sentimentului de competență atât la copil cât și la părinte.
-
-Scopul psihoterapiei este de a ajuta copilul și adolescentul:
-
-să depășească momentele în care resimte dificultăți
-să-și dezvolte abilitățile de comunicare, cooperare și rezolvare de probleme
-să-și îmbunătățească autocontrolul, perseverența, răbdarea
-să-și gestioneze mai bine stările emoționale
-să-și sporească independența
-să aibă mai multă încredere în forțele proprii, să-și descopere resursele interioare și “superputerile” pe care le deține
-să-și dezvolte gândirea critică și creativitatea
-să facă o schimbare în calitatea
-Este recomandat să apelăm la un psihoterapeut atunci când:
-
-Copilul:
-
-are anxietate de separare puternică
-are un comportament agresiv sau opoziționist
-are dificultăți de integrare în colectivitate
-are simptome fizice de origine psihică (enuresis, dureri abdominale, eczeme etc)
-a suferit o pierdere importantă pentru el: deces, separare de o persoană semnificativă (de exemplu divorț)
-are tulburări de somn, tulburări de alimentație
-se confruntă cu anxietate, panică, fobii, ticuri
-are dificultăți de adaptare școlară
-are o stimă de sine scăzută
-are o rezistență scăzută la frustrare
-Adolescentul:
-
-dorește să se cunoască mai bine, să își găsească și să își definească propria identitate
-are dificultăți de relaționare, conflicte în familie, fugă de acasă
-are o stimă de sine scăzută
-are un comportament agresiv, violent, autodistructiv sau evitant (de retragere și izolare)
-se confruntă cu depresie, anxietate, panică, fobii
-are dificultăți de integrare în grupul de prieteni
-se confruntă cu greutăți de învățare, eșec școlar sau absenteism
-suferă de tulburări de somn, tensiune emoțională, incapacitate de relaxare
-are tulburări de alimentație
-se confruntă cu abuz de substanțe (alcool, tutun, droguri)
-are simptome fizice de origine psihică
-a suferit o pierdere importantă pentru el: deces, separare de o persoană semnificativă (de exemplu divorț) sau un abuz
-Întâlnirea între psihoterapeut și copil se desfășoară într-un spațiu care oferă siguranță, suport și înțelegere. O relație sigură și previzibilă poate fi stabilită numai prin întâlniri regulate. Relația cu părinții este, de asemenea, o parte esențială a terapiei cu copiii, deoarece dezvoltarea copilului are loc în raport cu și în funcție de mediul său, astfel încât o schimbare a comportamentului copilului este în strânsă legătură cu atitudinea de susținere și motivația pentru schimbare a mediului. Acesta este motivul pentru care angajamentul părinților față de terapie este esențial.
-
-Când utilizatorul întreabă despre servicii, asistentul virtual ar trebui să pornească de la această listă și să nu inventeze alte tipuri de servicii.
-
-3. TIPURI DE CLIENȚI ȘI TEME FRECVENTE
-
-Cabinetul lucrează cu:
-- adulți care se confruntă cu anxietate, depresie, stres, epuizare, probleme de stimă de sine, dificultăți relaționale, crize de viață, traume emoționale; :contentReference[oaicite:4]{index=4}  
-- părinți care doresc să-și înțeleagă mai bine copiii, să gestioneze conflicte, crize de furie, adaptarea la grădiniță/școală, limite și conectare emoțională; :contentReference[oaicite:5]{index=5}  
-- copii și adolescenți care trec prin dificultăți emoționale, relaționale sau de adaptare (școală, grup de prieteni, familie);  
-- persoane interesate de dezvoltare personală, de o relație mai bună cu sine, de explorare spirituală și de sens. :contentReference[oaicite:6]{index=6}  
-
-4. STIL TERAPEUTIC ȘI VALORI
-
-În terapia cu Erika Jurescu, accentul este pe:
-- o abordare integrativă și flexibilă – nu există o „rețetă standard”, ci se adaptează procesul la fiecare persoană; :contentReference[oaicite:7]{index=7}  
-- lucru cu persoana ca întreg: gânduri, emoții, corp, relații și, când este relevant, dimensiunea spirituală; :contentReference[oaicite:8]{index=8}  
-- crearea unui spațiu sigur, confidențial, cu empatie, acceptare necondiționată și autenticitate;  
-- încredere în resursele și potențialul de transformare al fiecărei persoane; :contentReference[oaicite:9]{index=9}  
-
-Valori importante: confidențialitate, empatie, autenticitate, deschidere, creativitate, respect pentru unicitatea fiecărei persoane.
-
-5. LOCAȚIE ȘI CONTACT (PENTRU REFERINȚĂ)
-
-- Locație: Timișoara, România.  
-- Cabinet individual de psihologie în Timișoara (strada și detaliile exacte pot fi menționate doar dacă sunt puse la dispoziție explicit în configurarea tehnică; altfel, asistentul poate spune „în Timișoara” și să trimită utilizatorul la pagina de Contact de pe site). :contentReference[oaicite:10]{index=10}  
-- Telefon profesionist afișat public: 0770 228 230 (poate fi folosit în răspunsuri de tip „ne puteți contacta la…”, dacă politica proiectului permite folosirea directă a numărului). :contentReference[oaicite:11]{index=11}  
-
-Dacă în configurarea tehnică există câmpuri separate pentru site, e-mail și telefon, asistentul virtual ar trebui să le folosească pe acelea ca sursă principală. Acest fișier este doar context.
-
-6. ORGANIZAREA ȘEDINȚELOR
-
-- Ședințele durează, în mod obișnuit, aproximativ 50–60 de minute.  
-- Se lucrează atât online (video), cât și față în față, în funcție de preferințele și posibilitățile clientului. :contentReference[oaicite:12]{index=12}  
-- Frecvența este de regulă săptămânală sau la două săptămâni, stabilită împreună cu clientul.  
-- Politica de anulare: de obicei, ședințele se anulează sau se reprogramează cu un anumit număr de ore înainte; dacă nu există informație clară, asistentul virtual trebuie să recomande ca aceste detalii să fie stabilite direct cu terapeutul.
-
-7. CE NU FACE CABINETUL / LIMITE
-
-- Cabinetul psihologic nu este serviciu de urgență și nu poate oferi asistență de criză rapidă (de exemplu, pentru tentative de suicid sau violență în desfășurare).  
-- Erika Jurescu este psihoterapeut, nu medic psihiatru; nu prescrie medicamente și nu poate modifica tratamente medicamentoase.  
-- În caz de urgență (gânduri de suicid, risc de auto-vătămare, violență, pericol imediat), oamenii trebuie îndrumați să sune la 112 sau să contacteze serviciile medicale de urgență și persoane apropiate de încredere.
-- Nu se ocupa de: schizofrenie, dependenta de jocuri de noroc, dependenta de sex, dependenta de pornografie, disfunctii sexuale la barbati (disfunctie erectila, ejaculare precoce, ejaculare tardiva), tulburari de comportament alimentar 
-
-8. MODUL ÎN CARE AR TREBUI FOLOSIT ACEST CONTEXT
-
-- Asistentul virtual folosește acest text ca referință pentru a răspunde la întrebări despre cine este Erika Jurescu, ce servicii oferă, cum lucrează și cui se adresează.  
-- Răspunsurile către utilizator trebuie să fie formulate natural, la persoana a III-a când se vorbește despre terapeut („doamna Erika Jurescu lucrează…”) sau la persoana I plural („în cabinetul nostru oferim…”), NU prin copiere brută a acestui fișier.  
-- Dacă o informație din acest context intră în conflict cu informațiile tehnice actualizate (de exemplu, alt număr de telefon în config), trebuie preferate informațiile din configurarea curentă a aplicației.
