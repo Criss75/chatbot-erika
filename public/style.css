@@ -181,13 +181,14 @@ html, body {
 
 #send-btn {
   width: 34px; height: 34px; border-radius: 10px; border: none;
-  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  background: #9283BE;
   color: white; cursor: pointer;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
-  box-shadow: 0 4px 12px rgba(99,102,241,0.35);
+  box-shadow: 0 4px 12px rgba(146,131,190,0.35);
 }
-#send-btn:hover { transform: scale(1.06); box-shadow: 0 6px 18px rgba(99,102,241,0.45); }
+#send-btn svg { stroke: white; }
+#send-btn:hover { transform: scale(1.06); box-shadow: 0 6px 18px rgba(146,131,190,0.45); }
 #send-btn:active { transform: scale(0.94); }
 #send-btn:disabled { opacity: 0.45; cursor: default; transform: none; box-shadow: none; }
 
