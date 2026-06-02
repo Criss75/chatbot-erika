@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Widget</title>
+  <style>
+    html,body{height:100%;margin:0;background:transparent}
+    :root{--widget-bg:#9283BE;--widget-hover:#8166A8;--text:#fff}
+    #widget-wrap{position:fixed;right:20px;bottom:20px;z-index:9999}
+    #chat-widget-button{background:var(--widget-bg);color:var(--text);border-radius:99px;padding:6px 10px 6px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;box-shadow:0 6px 24px rgba(146,131,190,0.3);font-weight:700;font-size:14px;font-family:Arial,Helvetica,sans-serif;border:none;transition:box-shadow 0.2s,transform 0.15s;white-space:nowrap;height:52px}
+    #chat-widget-button:hover{box-shadow:0 8px 28px rgba(146,131,190,0.4);transform:translateY(-2px)}
+    .chat-btn-icon{width:50px;height:50px;border-radius:50%;overflow:hidden;background:#fff;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .chat-btn-icon img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
+    #chat-widget-iframe{position:fixed;right:22px;bottom:82px;width:390px;height:600px;max-height:80vh;border:none;border-radius:18px;box-shadow:0 18px 50px rgba(0,0,0,0.3);display:none;z-index:9998;overflow:hidden;background:#fff}
+    @media(max-width:480px){#chat-widget-iframe{right:10px;left:10px;width:auto;bottom:80px;height:calc(100vh - 90px)}#widget-wrap{right:10px;bottom:10px}}
+  </style>
+</head>
+<body>
+  <div id="widget-wrap">
+    <button id="chat-widget-button" aria-label="Deschide conversația cu Evrika, Asistent Virtual" title="Evrika, Asistent Virtual">
+      <span>Evrika, Asistent Virtual</span>
+      <div class="chat-btn-icon">
+        <img src="/erika-avatar.png" alt="Evrika avatar" />
+      </div>
+    </button>
+
+    <iframe id="chat-widget-iframe" src="/chat.html?clientId=erikajurescu" title="Chat Evrika, Asistent Virtual"></iframe>
+  </div>
+
+  <script>
+    const iframe = document.getElementById('chat-widget-iframe');
+    const btn = document.getElementById('chat-widget-button');
+    btn.addEventListener('click', () => {
+      const isHidden = iframe.style.display === 'none' || iframe.style.display === '';
+      iframe.style.display = isHidden ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
