@@ -41,7 +41,17 @@
       }
     }
 
-    // Set initial collapsed height (120px)
+    function alignChatIframe() {
+      iframe.style.position = 'fixed';
+      iframe.style.right = '0px';
+      iframe.style.left = 'auto';
+      iframe.style.bottom = '72px';
+      iframe.style.width = '390px';
+      iframe.style.maxWidth = 'calc(100vw - 40px)';
+    }
+
+    // Set initial collapsed height (120px) and force iframe alignment
+    alignChatIframe();
     postHeight(120);
 
     btn.addEventListener('click', () => {
@@ -49,6 +59,7 @@
       if (isHidden) {
         // open chat and request parent to expand iframe to viewport height
         iframe.style.display = 'block';
+        alignChatIframe();
         // Send parent the desired height in pixels (use viewport height)
         postHeight(window.innerHeight || Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
         // Also send explicit 700px requested by embedding page
