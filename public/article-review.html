@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Articol — Erika Jurescu</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --purple: #9283BE;
+    --pink: #E37BA5;
+    --accent: #ED5F91;
+    --dark: #2e2e2e;
+    --muted: #888;
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --border: #ede8f5;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg);
+    color: var(--dark);
+    min-height: 100vh;
+  }
+
+  /* ── TOP BAR ── */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--surface);
+    border-bottom: 1.5px solid var(--border);
+    padding: 0 2rem;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .topbar-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--purple);
+    letter-spacing: -0.2px;
+  }
+
+  .topbar-meta {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ── BUTTONS ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 9px 20px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .btn-approve {
+    background: var(--purple);
+    color: #fff;
+  }
+  .btn-approve:hover { background: #7b6aad; transform: translateY(-1px); }
+  .btn-approve:active { transform: translateY(0); }
+
+  .btn-reject {
+    background: transparent;
+    color: var(--dark);
+    border: 1.5px solid var(--border);
+  }
+  .btn-reject:hover { border-color: var(--pink); color: var(--pink); }
+
+  .btn-regen {
+    background: var(--pink);
+    color: #fff;
+  }
+  .btn-regen:hover { background: #d76a96; transform: translateY(-1px); }
+
+  .btn-edit {
+    background: transparent;
+    color: var(--purple);
+    border: 1.5px solid var(--purple);
+  }
+  .btn-edit:hover { background: var(--purple); color: #fff; }
+
+  .btn-sm {
+    padding: 7px 16px;
+    font-size: 12px;
+  }
+
+  /* ── STATUS BADGE ── */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 100px;
+  }
+  .badge-review { background: #f5f0ff; color: var(--purple); }
+  .badge-approved { background: #f0faf5; color: #2d8a5e; }
+  .badge-rejected { background: #fff0f5; color: var(--accent); }
+
+  /* ── MAIN LAYOUT ── */
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 0;
+    min-height: calc(100vh - 64px);
+  }
+
+  /* ── PREVIEW PANEL ── */
+  .preview-panel {
+    padding: 3rem 4rem;
+    border-right: 1.5px solid var(--border);
+    overflow-y: auto;
+  }
+
+  /* ── ARTICLE STYLES (brand) ── */
+  .ej-article { font-family: 'Montserrat', sans-serif; color: #2e2e2e; max-width: 680px; margin: 0 auto; }
+  .ej-article * { box-sizing: border-box; }
+
+  .ej-article .ej-eyebrow {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px; font-weight: 700;
+    color: #ED5F91;
+    letter-spacing: 2.5px; text-transform: uppercase;
+    margin-bottom: 0.85rem;
+  }
+  .ej-article .ej-meta {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px; color: #888;
+    margin: 0 0 2rem 0; letter-spacing: 0.3px;
+  }
+  .ej-article h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px; line-height: 1.3;
+    color: #9283BE; font-weight: 700;
+    margin: 0 0 1.5rem 0; letter-spacing: -0.3px;
+  }
+  .ej-article .ej-intro {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; line-height: 1.9;
+    color: #444; margin-bottom: 2rem;
+  }
+  .ej-article h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; color: #9283BE;
+    font-weight: 500;
+    margin: 2.5rem 0 1rem 0;
+    line-height: 1.35; border: none; background: none; padding: 0;
+  }
+  .ej-article p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15.5px; line-height: 1.9;
+    color: #2e2e2e; margin: 0 0 1.1rem 0;
+  }
+  .ej-article p strong, .ej-article strong { color: #9283BE; font-weight: 700; }
+  .ej-article .ej-list { list-style: none; padding: 0; margin: 0.75rem 0 1.5rem 0; }
+  .ej-article .ej-list li {
+    position: relative; padding-left: 28px;
+    margin: 0 0 0.9rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15.5px; line-height: 1.8; color: #2e2e2e;
+  }
+  .ej-article .ej-list li::before {
+    content: "✓";
+    position: absolute; left: 0; top: 1px;
+    color: #E37BA5; font-weight: 700; font-size: 14px;
+  }
+  .ej-article .ej-list li strong { color: #9283BE; font-weight: 700; }
+  .ej-article .ej-quote {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px; color: #9283BE;
+    font-weight: 400; font-style: italic;
+    line-height: 1.6; margin: 1.75rem 0;
+    padding-left: 1.25rem;
+    border-left: 3px solid #ED5F91;
+  }
+  .ej-article a { color: #9283BE; text-decoration: underline; text-decoration-color: #ED5F91; }
+  .ej-article .ej-cta {
+    margin-top: 3rem; padding: 2rem 1.5rem;
+    border-top: 1px solid #f0e8f8; border-bottom: 1px solid #f0e8f8;
+    text-align: center;
+  }
+  .ej-article .ej-cta p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px; color: #555;
+    margin-bottom: 1.25rem; font-style: italic; line-height: 1.7;
+  }
+  .ej-article .ej-cta-btn {
+    display: inline-block; background: #E37BA5;
+    color: #fff; font-family: 'Montserrat', sans-serif;
+    font-size: 15px; padding: 13px 32px;
+    border-radius: 100px; text-decoration: none;
+  }
+
+  /* editable mode */
+  .ej-article[contenteditable="true"] {
+    outline: none;
+    border: 2px dashed var(--purple);
+    border-radius: 12px;
+    padding: 2rem;
+  }
+  .ej-article[contenteditable="true"]:focus { border-color: var(--accent); }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: var(--surface);
+  }
+
+  .sidebar-section {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.25rem 1.25rem;
+  }
+
+  .sidebar-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 0.9rem;
+  }
+  .meta-row:last-child { margin-bottom: 0; }
+  .meta-label {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .meta-value {
+    font-size: 13px;
+    color: var(--dark);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .meta-value.keyword {
+    color: var(--purple);
+    font-weight: 700;
+  }
+
+  /* SEO score */
+  .seo-bar-wrap {
+    margin-top: 0.5rem;
+  }
+  .seo-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: var(--muted);
+  }
+  .seo-bar-label span:last-child {
+    font-weight: 700;
+    color: var(--purple);
+  }
+  .seo-bar {
+    height: 6px;
+    background: var(--border);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .seo-bar-fill {
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(90deg, var(--purple), var(--accent));
+    transition: width 1s ease;
+  }
+
+  /* word count pill */
+  .stat-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+  }
+  .stat-pill {
+    background: #f0ebff;
+    color: var(--purple);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+
+  /* action panel */
+  .action-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .action-section .btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 13.5px;
+    padding: 12px 20px;
+  }
+
+  .action-divider {
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2px 0;
+  }
+
+  /* reject panel (hidden by default) */
+  .reject-panel {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .reject-panel.visible { display: flex; }
+
+  .reject-panel p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* edit hint */
+  .edit-hint {
+    display: none;
+    background: #fff8e7;
+    border: 1px solid #f5d68a;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: #8a6800;
+    line-height: 1.5;
+  }
+  .edit-hint.visible { display: block; }
+
+  /* toast */
+  .toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: var(--dark);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 100px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    white-space: nowrap;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+
+  /* overlay de succes */
+  .success-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(250,249,252,0.96);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .success-overlay.show { display: flex; }
+  .success-icon {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    background: #f0faf5;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+  }
+  .success-overlay h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px; font-weight: 700; color: var(--purple);
+  }
+  .success-overlay p {
+    font-size: 14px; color: var(--muted); max-width: 320px; line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .preview-panel { padding: 2rem 1.5rem; border-right: none; border-bottom: 1.5px solid var(--border); }
+    .topbar { padding: 0 1rem; }
+    .topbar-actions .btn { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-left">
+    <div class="logo-dot"></div>
+    <div>
+      <div class="topbar-title">Review Articol</div>
+      <div class="topbar-meta">erikajurescu.ro · workflow n8n</div>
+    </div>
+  </div>
+  <div class="topbar-actions">
+    <span class="badge badge-review" id="status-badge">● În așteptare</span>
+    <button class="btn btn-approve btn-sm" onclick="approveArticle()">✓ Aprobă &amp; trimite în WP</button>
+  </div>
+</header>
+
+<!-- MAIN -->
+<div class="layout">
+
+  <!-- PREVIEW -->
+  <main class="preview-panel">
+    <div class="ej-article" id="article-content">
+      <!-- Conținutul articolului vine din n8n via URL param sau fetch -->
+      <div class="ej-eyebrow" id="art-eyebrow">POVESTE PENTRU PĂRINȚI</div>
+      <h1 id="art-title">Anxietatea de separare la copilul mic — ce simte părintele</h1>
+      <div class="ej-meta" id="art-meta">5 iunie 2025 · 6 min lectură</div>
+      &nbsp;
+      <p class="ej-intro" id="art-intro">Când copilul tău plânge în pragul creșei și se agață de tine cu toată puterea lui mică, ceva se mișcă adânc în tine. Nu e doar o scenă dificilă de dimineață — e un moment în care două istorii emoționale se ating. A lui, nouă și fragilă. A ta, veche și uneori nevindecată. Acest articol vorbește despre ce trăiești tu ca părinte în fața anxietății de separare a copilului tău.</p>
+
+      <h2><strong>Ce este anxietatea de separare și de ce e normală</strong></h2>
+      <p>Anxietatea de separare apare la majoritatea copiilor între 6 luni și 3 ani. Este un semn că <strong>legătura de atașament funcționează</strong>: copilul a înțeles că tu ești persoana lui sigură și se teme să nu te piardă. Nu este o problemă de comportament, nu este o dovadă că ai greșit ceva ca părinte.</p>
+      <p>Creierul copilului mic nu poate ancora în timp — el nu știe că „mama vine după două ore". Tot ce știe este: <strong>mama nu e, și asta doare acum.</strong></p>
+
+      <div class="ej-quote">„Plânsul copilului nu e manipulare — e cel mai sincer limbaj pe care îl are la dispoziție pentru a spune: am nevoie de tine."</div>
+
+      <h2><strong>Ce se întâmplă în tine când el plânge</strong></h2>
+      <p>Înainte să te gândești la strategii pentru copil, merită să te oprești o clipă asupra ta. Ce simți când îl lași și el plânge?</p>
+      <ul class="ej-list">
+        <li><strong>Vinovăție</strong> — „Îl rănesc? Voi lăsa o urmă?"</li>
+        <li><strong>Neputință</strong> — „Nu pot face nimic ca să-l opresc din plâns."</li>
+        <li><strong>Iritare</strong> — uneori, după prea multe dimineți la fel, apare și furia, urmată imediat de rușine.</li>
+        <li><strong>Propria ta frică veche</strong> — dacă ai trăit separări dureroase în copilărie, aceste momente le pot reactiva.</li>
+      </ul>
+
+      <h2><strong>Cum poți fi prezentă fără să amplifici anxietatea</strong></h2>
+      <p>Copilul tău citește starea ta emoțională mai bine decât orice cuvânt. Dacă tu ești anxioasă și vinovată în clipa despărțirii, el simte că <strong>există ceva de care să se teamă</strong>. Asta nu înseamnă să îți ascunzi emoțiile — înseamnă să le poți purta fără să te copleșească în acel moment.</p>
+      <ul class="ej-list">
+        <li><strong>Ritual de despărțire scurt și cald</strong> — același în fiecare zi, fără prelungiri.</li>
+        <li><strong>Ton calm și ferm</strong> — „Te iubesc, mă întorc după somn de prânz."</li>
+        <li><strong>Nu te întoarce din jumătatea drumului</strong> — o despărțire întreruptă crește anxietatea.</li>
+      </ul>
+
+      <h2><strong>Când să ceri ajutor</strong></h2>
+      <p>Anxietatea de separare care persistă după 4 ani, care este extrem de intensă sau care afectează somnul și alimentația copilului merită o privire mai atentă. La fel și situațiile în care <strong>tu, ca părinte, simți că nu mai poți gestiona emoțional aceste momente</strong>.</p>
+      <p>Consilierea parentală poate fi spațiul în care descoperi ce anume din propria ta istorie se activează — și cum să răspunzi copilului tău dintr-un loc mai liniștit.</p>
+
+      <div class="ej-cta">
+        <p>Dacă aceste momente devin prea grele de dus singură, sunt aici pentru o discuție.</p>
+        <a class="ej-cta-btn" href="tel:+40770228230">Programează o ședință</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- META ARTICOL -->
+    <div class="sidebar-section">
+      <h3>Brief</h3>
+      <div class="meta-row">
+        <span class="meta-label">Titlu</span>
+        <span class="meta-value" id="meta-title">Anxietatea de separare la copilul mic</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Cuvânt cheie SEO</span>
+        <span class="meta-value keyword" id="meta-keyword">anxietate separare copil mic</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Categorie</span>
+        <span class="meta-value" id="meta-category">Consiliere parentală</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Public țintă</span>
+        <span class="meta-value" id="meta-audience">Mame cu copii 1–4 ani</span>
+      </div>
+    </div>
+
+    <!-- STATISTICI -->
+    <div class="sidebar-section">
+      <h3>Statistici articol</h3>
+      <div class="stat-pills">
+        <span class="stat-pill" id="stat-words">~ 620 cuvinte</span>
+        <span class="stat-pill" id="stat-read">6 min lectură</span>
+        <span class="stat-pill" id="stat-sections">5 secțiuni</span>
+      </div>
+      <div class="seo-bar-wrap">
+        <div class="seo-bar-label">
+          <span>Densitate cuvânt cheie</span>
+          <span id="kw-density">1.4%</span>
+        </div>
+        <div class="seo-bar"><div class="seo-bar-fill" id="kw-bar" style="width: 70%"></div></div>
+      </div>
+    </div>
+
+    <!-- ACȚIUNI -->
+    <div class="sidebar-section">
+      <h3>Decizie</h3>
+
+      <div class="action-section" id="action-panel">
+        <button class="btn btn-approve" onclick="approveArticle()">
+          ✓ Aprobă — trimite în WordPress
+        </button>
+
+        <div class="action-divider">sau</div>
+
+        <button class="btn btn-reject" onclick="showRejectOptions()">
+          ✕ Nu e bun — opțiuni
+        </button>
+      </div>
+
+      <!-- Opțiuni reject -->
+      <div class="reject-panel" id="reject-panel">
+        <p>Ce vrei să faci cu articolul?</p>
+        <button class="btn btn-regen" onclick="regenerateArticle()">
+          ↺ Regenerează automat
+        </button>
+        <button class="btn btn-edit" onclick="enableEditing()">
+          ✎ Editez eu manual
+        </button>
+        <button class="btn btn-reject btn-sm" onclick="hideRejectOptions()" style="border-color:#ddd; color:var(--muted); margin-top:4px">
+          ← Înapoi
+        </button>
+      </div>
+
+      <!-- Hint editare manuală -->
+      <div class="edit-hint" id="edit-hint">
+        ✏️ Articolul este acum editabil — click direct pe text pentru a modifica. Când ești gata, apasă <strong>Aprobă</strong> sus.
+      </div>
+    </div>
+
+    <!-- YOAST PREVIEW -->
+    <div class="sidebar-section">
+      <h3>Preview Yoast SEO</h3>
+      <div style="background:#fff; border:1px solid #e0e0e0; border-radius:8px; padding:12px; font-family:Arial,sans-serif;">
+        <div style="font-size:11px; color:#1a0dab; font-weight:600; margin-bottom:3px;" id="yoast-title">
+          Anxietatea de separare copil mic · Erika Jurescu Psiholog Timișoara
+        </div>
+        <div style="font-size:10px; color:#006621; margin-bottom:4px;">
+          erikajurescu.ro › parenting › anxietate-separare
+        </div>
+        <div style="font-size:10px; color:#545454; line-height:1.4;" id="yoast-desc">
+          Descoperă ce simte părintele când copilul mic plânge la separare și cum poți gestiona anxietatea de separare cu calm și empatie.
+        </div>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- SUCCESS OVERLAY -->
+<div class="success-overlay" id="success-overlay">
+  <div class="success-icon">✓</div>
+  <h2>Articol aprobat!</h2>
+  <p>Articolul a fost trimis în WordPress ca draft. Poți să-l revizuiești și să dai Publish direct din WP Admin.</p>
+  <a href="https://erikajurescu.ro/wp-admin/edit.php" target="_blank" class="btn btn-approve" style="margin-top:0.5rem">
+    Deschide WP Admin →
+  </a>
+</div>
+
+<script>
+  // ── CONFIGURARE (înlocuite automat de n8n via URL params) ──
+  const params = new URLSearchParams(window.location.search);
+  const JOB_ID   = params.get('job_id')   || 'demo-001';
+  const WEBHOOK  = params.get('webhook')  || 'https://your-n8n.railway.app/webhook/article-review';
+  const KW       = params.get('keyword')  || 'anxietate separare copil mic';
+
+  // Calculează statistici reale din conținut
+  function calcStats() {
+    const text = document.getElementById('article-content').innerText;
+    const words = text.trim().split(/\s+/).length;
+    const mins  = Math.ceil(words / 180);
+    const h2s   = document.querySelectorAll('.ej-article h2').length;
+
+    document.getElementById('stat-words').textContent = `~ ${words} cuvinte`;
+    document.getElementById('stat-read').textContent  = `${mins} min lectură`;
+    document.getElementById('stat-sections').textContent = `${h2s} secțiuni`;
+
+    // densitate keyword
+    const kwWords = KW.toLowerCase().split(' ');
+    const textLow = text.toLowerCase();
+    let hits = 0;
+    kwWords.forEach(w => { const re = new RegExp('\\b'+w+'\\b','g'); hits += (textLow.match(re)||[]).length; });
+    const density = ((hits / words) * 100).toFixed(1);
+    document.getElementById('kw-density').textContent = density + '%';
+    const pct = Math.min(100, Math.round((density / 2.5) * 100));
+    document.getElementById('kw-bar').style.width = pct + '%';
+  }
+
+  // ── APPROVE ──
+  async function approveArticle() {
+    const html = document.getElementById('article-content').innerHTML;
+    showToast('Se trimite în WordPress…');
+
+    try {
+      await fetch(WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'approve',
+          job_id: JOB_ID,
+          html_content: html
+        })
+      });
+    } catch(e) {
+      // în modul demo funcționează fără webhook real
+    }
+
+    setBadge('approved', '✓ Aprobat');
+    document.getElementById('success-overlay').classList.add('show');
+  }
+
+  // ── REJECT OPTIONS ──
+  function showRejectOptions() {
+    document.getElementById('action-panel').style.display = 'none';
+    document.getElementById('reject-panel').classList.add('visible');
+  }
+  function hideRejectOptions() {
+    document.getElementById('action-panel').style.display = 'flex';
+    document.getElementById('reject-panel').classList.remove('visible');
+    document.getElementById('edit-hint').classList.remove('visible');
+    const art = document.getElementById('article-content');
+    art.removeAttribute('contenteditable');
+  }
+
+  // ── REGENERATE ──
+  async function regenerateArticle() {
+    setBadge('review', '⟳ Se regenerează…');
+    showToast('Trimitem înapoi la Claude… loop activ');
+
+    try {
+      await fetch(WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'regenerate', job_id: JOB_ID })
+      });
+    } catch(e) {}
+
+    setTimeout(() => {
+      showToast('Claude rescrie articolul. Vei primi un nou link de review în câteva secunde.');
+    }, 1500);
+  }
+
+  // ── EDIT MANUAL ──
+  function enableEditing() {
+    const art = document.getElementById('article-content');
+    art.setAttribute('contenteditable', 'true');
+    art.focus();
+    document.getElementById('edit-hint').classList.add('visible');
+    document.getElementById('reject-panel').classList.remove('visible');
+    document.getElementById('action-panel').style.display = 'flex';
+    showToast('Mod editare activat — click pe orice text');
+  }
+
+  // ── HELPERS ──
+  function setBadge(type, text) {
+    const b = document.getElementById('status-badge');
+    b.className = 'badge badge-' + type;
+    b.textContent = text;
+  }
+
+  let toastTimer;
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 3500);
+  }
+
+  // Init
+  calcStats();
+</script>
+</body>
+</html>
