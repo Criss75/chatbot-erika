@@ -621,7 +621,7 @@
   // ── CONFIGURARE (înlocuite automat de n8n via URL params) ──
   const params = new URLSearchParams(window.location.search);
   const JOB_ID   = params.get('job_id')   || 'demo-001';
-  const WEBHOOK  = params.get('webhook')  || 'https://your-n8n.railway.app/webhook/article-review';
+  const WEBHOOK = params.get('webhook') || 'https://n8n-production-03e37.up.railway.app/webhook/article-review';
   const KW       = params.get('keyword')  || 'anxietate separare copil mic';
 
   // Calculează statistici reale din conținut
