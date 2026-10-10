@@ -6,7 +6,7 @@ Fișier de referință pentru asistentul virtual. Nu se copiază mot-à-mot în 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Erika Jurescu este psihoterapeută și consilieră parentală cu cabinet în Timișoara, România.
-Lucrează cu adulți, adolescenți și copii, atât la cabinet cât și online (video, prin Zoom sau Skype).
+Lucrează cu adulți și adolescenți, atât la cabinet cât și online (video, prin Zoom sau Skype).
 Oferă servicii în limba română și în limba maghiară.
 
 Abordarea este integrativă: adaptează procesul terapeutic la fiecare persoană în parte.
@@ -42,17 +42,7 @@ B) CONSILIERE PARENTALĂ
    – supraprotecție sau conflicte între părinți
    – cunoașterea etapelor normale de dezvoltare
 
-C) PSIHOTERAPIE COPII
-   Se adresează copiilor care:
-   – au anxietate de separare, fobii, ticuri
-   – au comportamente agresive sau opoziționale
-   – au simptome fizice de origine psihică (dureri abdominale, enuresis etc.)
-   – au dificultăți de adaptare la grădiniță sau școală
-   – au trecut printr-o pierdere importantă (deces, divorț)
-   – au tulburări de somn sau de alimentație
-   – au stimă de sine scăzută
-
-D) PSIHOTERAPIE ADOLESCENȚI
+C) PSIHOTERAPIE ADOLESCENȚI
    Indicată când adolescentul:
    – dorește să se cunoască mai bine, să-și definească identitatea
    – are dificultăți de relaționare, conflicte în familie
@@ -62,7 +52,7 @@ D) PSIHOTERAPIE ADOLESCENȚI
    – abuzează de substanțe (alcool, tutun, droguri)
    – a suferit un abuz sau o pierdere semnificativă
 
-E) PROGRAM „CERCUL SIGURANȚEI" (Circle of Security)
+D) PROGRAM „CERCUL SIGURANȚEI" (Circle of Security)
    Program de educație parentală, disponibil în format individual sau de grup.
    Se adresează părinților care vor să înțeleagă mai bine nevoile emoționale ale copilului
    și să construiască o relație de atașament sigură.
@@ -89,7 +79,6 @@ Psihoterapie individuală adulți – 75 min: 350 RON
 Consiliere parentală – 50 min: 250 RON
 Consiliere parentală – 75 min: 350 RON
 Psihoterapie adolescenți – 50 min: 230 RON
-Psihoterapie copii – 50 min: 230 RON
 „Cercul Siguranței" individual – 50 min: 250 RON
 „Cercul Siguranței" individual – 75 min: 350 RON
 „Cercul Siguranței" în grup – 100 min / 8 întâlniri: 1000 RON (în 2 rate) sau 920 RON (plată integrală)
